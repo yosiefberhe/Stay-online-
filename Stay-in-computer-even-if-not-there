@@ -1,0 +1,12 @@
+import pyautogui
+import time
+
+
+pyautogui.FAILSAFE = False
+while True:
+    time.sleep(260)
+    for i in range(0, 200):
+        pyautogui.moveTo(0, i * 8)
+
+    for i in range(0, 3):
+        pyautogui.press('shift')
